@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--去掉windowTitle-->
+        <item name="windowNoTitle">true</item>
+        <!--设置全屏状态-->
+        <item name="android:windowFullscreen">true</item>
+        <!--设置背景图片-->
+        <item name="android:windowBackground">@mipmap/ic_launcher</item>
+        <!--设置内容覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Full_Activity" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--去掉windowTitle-->
+        <item name="windowNoTitle">true</item>
+        <!--设置全屏状态-->
+        <item name="android:windowFullscreen">true</item>
+        <!--设置背景图片-->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--设置内容覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+
+    <style name="YourLightTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">#FFB628</item>
+        <item name="colorPrimaryDark">#FFB628</item>
+        <item name="colorAccent">#FFB628</item>
+
+    </style>
+
+    <declare-styleable name="StatusBarHeightView">
+        <attr name="use_type" format="integer">
+            <enum name="use_height" value="0" />
+            <enum name="use_padding_top" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <style name="ProgressDialog" parent="android:Theme.Dialog">
+        <!--  <item name="android:indeterminateDrawable">@drawable/ic_circle_progress</item>  -->
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--半透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--背景透明 false -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--模糊-->
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+</resources>
